@@ -57,7 +57,7 @@
       <div
         class="presentation"
         data-aos="fade-right"
-        data-aos-offset="200"
+        data-aos-offset="0"
         data-aos-delay="5"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
@@ -125,7 +125,7 @@
             <div
               class="PSC1"
               data-aos="fade-right"
-              data-aos-offset="20"
+              data-aos-offset="15"
               data-aos-delay="50"
               data-aos-duration="3000"
               data-aos-mirror="true"
@@ -139,7 +139,7 @@
             <div
               class="DEME"
               data-aos="fade-right"
-              data-aos-offset="20"
+              data-aos-offset="10"
               data-aos-delay="50"
               data-aos-duration="3000"
               data-aos-mirror="true"
@@ -155,7 +155,7 @@
             <div
               class="BAFA"
               data-aos="fade-right"
-              data-aos-offset="20"
+              data-aos-offset="5"
               data-aos-delay="50"
               data-aos-duration="3000"
               data-aos-mirror="true"
@@ -171,7 +171,7 @@
             <div
               class="BAC"
               data-aos="fade-right"
-              data-aos-offset="20"
+              data-aos-offset="0"
               data-aos-delay="50"
               data-aos-duration="3000"
               data-aos-mirror="true"
@@ -217,11 +217,13 @@
       <div class="pop-up-contact">
         <h3>Contactez-moi !</h3>
         <div class="button-contact">
-          <input id="nom" type="text" placeholder="Nom" />
-          <input id="prenom" type="text" placeholder="Prénom" />
-          <input id="email" type="email" placeholder="votre mail" />
-          <input id="message" type="text" placeholder="votre message" />
-          <button type="submit">Envoyer</button>
+          <form action="contact.php" method="POST">
+            <input id="nom" type="text" placeholder="Nom" />
+            <input id="prenom" type="text" placeholder="Prénom" />
+            <input id="email" type="email" placeholder="votre mail" />
+            <input id="message" type="text" placeholder="votre message" />
+            <button type="submit">Envoyer</button>
+          </form>
         </div>
         <i class="far fa-times-circle" id="close" onclick="closePopUp()"></i>
       </div>
@@ -330,8 +332,8 @@
       </div>
     </div>
     <footer>
-      <div id="copyright">
-        <span>© CV de Lucile 2021</span>
+      <div class="footer">
+        <div class="copyright">© CV de Lucile 2021</div>
       </div>
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

@@ -22,20 +22,16 @@ body {
 
 .avatar-lucile {
   width: 200px;
-  height: 200px;
-  border: none;
-  -moz-border-radius: 75px;
-  -webkit-border-radius: 75px;
+  height: auto;
   border-radius: 75px;
   margin-top: 20px;
   margin-left: 44px;
-  float: left;
 }
 
 #icons {
   margin-top: 30px;
   width: 30%;
-  height: 100px;
+  height: auto;
   display: flex;
 }
 
@@ -71,7 +67,7 @@ body {
   margin-left: 73px;
   float: left;
   justify-content: left;
-  width: auto;
+  width: 40%;
 }
 
 .presentation h1 {
@@ -79,10 +75,7 @@ body {
 }
 
 .presentation p {
-  float: right;
   color: #e9e5e3;
-  width: 600px;
-  height: 130px;
 }
 
 .cv {
@@ -110,8 +103,8 @@ body {
 }
 
 .mockup {
-  margin-top: -100px;
-  float: right;
+  width: 60%;
+
   justify-content: right;
 }
 .mockup a {
@@ -137,28 +130,25 @@ img {
 }
 
 .secondTrait {
+  margin-left: auto;
   height: 2px;
   width: 10%;
   background-color: #eac3a9;
-  float: right;
-  justify-content: right;
-  text-align: right;
 }
 
 .formations {
+  margin-top: 50px;
   color: #264653;
-  float: right;
+  gap: 20px;
   text-align: right;
-  width: auto;
+  display: flex;
+  flex-direction: column;
   margin-right: 40px;
 }
 
 .formations p {
   float: right;
   text-align: right;
-  margin-left: 50%;
-
-  width: 35em;
 }
 
 .liste {
@@ -339,8 +329,8 @@ img {
 /* * HOBBIES * */
 
 #dessinHobbies {
-  width: 1000px;
-  height: 800px;
+  width: 80%;
+  height: auto;
 }
 
 /* * CONTACT * */
@@ -348,9 +338,9 @@ img {
 .contact {
   position: relative;
   justify-content: center;
-  margin-left: 450px;
+  margin-left: 20%;
   height: 550px;
-  width: 820px;
+  width: 60%;
   text-align: center;
   background-color: #e76f51;
   border-radius: 76% 24% 90% 10% / 20% 85% 15% 80%;
@@ -454,6 +444,22 @@ img {
   height: 150px;
 }
 
+/* ** FOOTER ** */
+
+.footer {
+  margin-top: 80px;
+  background-color: #264653;
+  height: 50px;
+  border-radius: 200px 200px 0px 0px;
+  margin: none;
+}
+
+.copyright {
+  color: #e9e5e3;
+  justify-content: center;
+  text-align: center;
+}
+
 /* ** RESPONSIVE ** */
 
 @media screen and (max-width: 460px) {
@@ -476,20 +482,18 @@ img {
   }
 
   .presentation p {
-    text-align: center;
     display: flex;
-    width: 340px;
-    height: 180px;
   }
 
   .partiePresentation {
-    display: block;
-    justify-content: center;
+    flex-direction: column;
+
     height: 500px;
   }
 
   .presentation {
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     width: 280px;
   }
