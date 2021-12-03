@@ -203,7 +203,7 @@
       </div>
     </div>
     <!-- POP-UP -->
-    <div
+    <!-- <div
       class="pop-up"
       id="pop-up"
       data-aos="zoom-in"
@@ -218,22 +218,42 @@
         <h3>Contactez-moi !</h3>
         <div class="button-contact">
           <form action="contact.php" method="POST">
-            <input id="nom" type="text" placeholder="Nom" />
-            <input id="prenom" type="text" placeholder="Prénom" />
-            <input id="email" type="email" placeholder="votre mail" />
-            <input id="message" type="text" placeholder="votre message" />
-            <button type="submit">Envoyer</button>
+            <input
+              id="lastname"
+              type="text"
+              placeholder="Nom"
+              name="lastname"
+            />
+            <input
+              id="firstname"
+              type="text"
+              placeholder="Prénom"
+              name="firstname"
+            />
+            <input
+              id="email"
+              type="email"
+              placeholder="votre mail"
+              name="email"
+            />
+            <input
+              id="message"
+              type="text"
+              placeholder="votre message"
+              name="message"
+            />
+            <button type="submit" value="submit">Envoyer</button>
           </form>
         </div>
         <i class="far fa-times-circle" id="close" onclick="closePopUp()"></i>
       </div>
-    </div>
+    </div> -->
     <!-- EXPERIENCES PROFESSIONNELLES -->
     <div class="partieExperiences">
-      <div class="experiences">
-        <div class="stage">
-          <div id="experience">stage de fin de formation</div>
-          <div id="detail">
+      <div id="experiences">
+        <ul class="listeExperiences">
+          <li id="experience1">Stage de fin de formation</li>
+          <div id="detail1">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
             omnis, corrupti quibusdam voluptatum ex beatae dignissimos nam
             earum, at quia officiis quo doloremque animi sunt commodi vitae,
@@ -245,10 +265,8 @@
             saepe vero, recusandae id? Tempora est praesentium accusantium iste
             illum.
           </div>
-        </div>
-        <div class="hackathon">
-          <div id="experience">Hackathon Accenture</div>
-          <div id="detail">
+          <li id="experience2">Hackathon</li>
+          <div id="detail2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
             omnis, corrupti quibusdam voluptatum ex beatae dignissimos nam
             earum, at quia officiis quo doloremque animi sunt commodi vitae,
@@ -260,10 +278,8 @@
             saepe vero, recusandae id? Tempora est praesentium accusantium iste
             illum.
           </div>
-        </div>
-        <div class="projets">
-          <div id="experience">Projets informatiques</div>
-          <div id="detail">
+          <li id="experience3">Projets informatiques</li>
+          <div id="detail3">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
             omnis, corrupti quibusdam voluptatum ex beatae dignissimos nam
             earum, at quia officiis quo doloremque animi sunt commodi vitae,
@@ -275,10 +291,8 @@
             saepe vero, recusandae id? Tempora est praesentium accusantium iste
             illum.
           </div>
-        </div>
-        <div class="ME">
-          <div id="experience">Monitrice Educatrice</div>
-          <div id="detail">
+          <li id="experience4">Monitrice Educatrice</li>
+          <div id="detail4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
             omnis, corrupti quibusdam voluptatum ex beatae dignissimos nam
             earum, at quia officiis quo doloremque animi sunt commodi vitae,
@@ -290,7 +304,7 @@
             saepe vero, recusandae id? Tempora est praesentium accusantium iste
             illum.
           </div>
-        </div>
+        </ul>
       </div>
     </div>
     <!-- TECHNOLOGIES UTILISEES -->
@@ -303,13 +317,16 @@
         data-aos-easing="ease-out-cubic"
         data-aos-duration="2000"
       >
-        >
         <li class="css">
           <img src="./assets/logos/css.png" alt="css" />
         </li>
-        <li><img src="./assets/logos/html.png" alt="html" /></li>
-        <li><img id="js" src="./assets/logos/javaScript.png" alt="js" /></li>
-        <li><img id="php" src="./assets/logos/php.png" alt="php" /></li>
+        <li class="html"><img src="./assets/logos/html.png" alt="html" /></li>
+        <li class="js">
+          <img id="js" src="./assets/logos/javaScript.png" alt="js" />
+        </li>
+        <li class="php">
+          <img id="php" src="./assets/logos/php.png" alt="php" />
+        </li>
       </ul>
     </div>
     <!-- HOBBIES -->
@@ -319,18 +336,20 @@
       id="dessinHobbies"
     />
     <!-- CONTACT -->
-    <div class="contact">
+    <!-- <div class="contact">
       <div class="form-contact">
         <h3>Contactez-moi !</h3>
-        <div class="form-button">
-          <input id="nom" type="text" placeholder="Nom" />
-          <input id="prenom" type="text" placeholder="Prénom" />
-          <input id="email" type="email" placeholder="votre mail" />
-          <input id="message" type="text" placeholder="votre message" />
-          <button type="submit">Envoyer</button>
+        < class="form-button">
+          <form action="contact.php" method="POST">
+         <input id="lastname" type="text" placeholder="Nom" name="lastname" />
+            <input id="firstname" type="text" placeholder="Prénom" name="firstname"/>
+            <input id="email" type="email" placeholder="votre mail" name="email"/>
+            <input id="message" type="text" placeholder="votre message" name="message" />
+          <button type="submit" value="submit">Envoyer</button>
+          </form>
         </div>
       </div>
-    </div>
+    </div> -->
     <footer>
       <div class="footer">
         <div class="copyright">© CV de Lucile 2021</div>

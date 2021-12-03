@@ -21,7 +21,7 @@ body {
 }
 
 .avatar-lucile {
-  width: 200px;
+  width: 20%;
   height: auto;
   border-radius: 75px;
   margin-top: 20px;
@@ -55,19 +55,16 @@ body {
 
 .partiePresentation {
   display: flex;
-  justify-content: space-around;
   flex-direction: row;
   background-color: #264653;
-  height: 400px;
   border-radius: 0px 0px 200px 200px;
-  margin: none;
+  margin-top: none;
+  height: 50%;
 }
 
 .presentation {
-  margin-left: 73px;
-  float: left;
-  justify-content: left;
-  width: 40%;
+  margin-left: 5%;
+  width: 30%;
 }
 
 .presentation h1 {
@@ -103,9 +100,9 @@ body {
 }
 
 .mockup {
-  width: 60%;
-
+  width: 30%;
   justify-content: right;
+  margin-right: 40%;
 }
 .mockup a {
   text-decoration: none;
@@ -120,8 +117,7 @@ img {
   width: 800px;
 }
 
-/* ** FORMATIONS ** */
-
+/** FORMATIONS **/
 .partieFormations {
   margin-top: 150px;
   display: flex;
@@ -294,27 +290,45 @@ img {
   display: block;
   justify-content: center;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 10%;
   padding-bottom: 30px;
 }
 
-.experiences {
-  padding-top: 80px;
+#experiences {
+  padding-top: 5%;
 }
 
-#experience {
+.listeExperiences li {
+  margin-top: 20%;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  width: auto;
+}
+
+#experiences li {
   background-color: #e9c46a;
   color: #264653;
   font-weight: 600;
   border-radius: 10px;
   height: 50px;
   padding-top: 25px;
-  width: 50%;
-  margin: 0 auto;
-  width: 850px;
+  margin: 0 5% 5% 5%;
+  width: 80%;
 }
 
-#detail {
+#experiences li:hover {
+  background-color: #e76f51;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+  transform: scale(1.05);
+}
+
+#detail1,
+#detail2,
+#detail3,
+#detail4 {
   color: #e9e5e3;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -322,8 +336,71 @@ img {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 75%;
   margin-bottom: 50px;
+}
+
+#detail1,
+#detail2,
+#detail3,
+#detail4 {
+  display: none;
+}
+
+/* ** TECHNOLOGIES ** */
+
+.technologies {
+  margin-top: 80px;
+}
+
+.technologies h2 {
+  text-align: center;
+  color: #264653;
+}
+.troisiemeTrait {
+  height: 2px;
+  width: 10%;
+  background-color: #eac3a9;
+  justify-content: center;
+  margin: auto;
+}
+.liste-technologies {
+  margin: none;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding-left: 1%;
+}
+
+.technologies img {
+  margin-top: 10%;
+  width: 50%;
+  height: auto;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+.css img {
+  margin-right: 2%;
+  margin-left: 5%;
+}
+
+.html img {
+  margin-right: 2%;
+}
+
+.js img {
+  margin-right: 0%;
+}
+
+.technologies #js {
+  width: 80%;
+  height: auto;
+}
+
+.technologies #php {
+  width: 90%;
+  height: auto;
 }
 
 /* * HOBBIES * */
@@ -405,45 +482,6 @@ img {
   height: 40px;
 }
 
-/* ** TECHNOLOGIES ** */
-
-.technologies {
-  margin-top: 80px;
-}
-
-.technologies h2 {
-  text-align: center;
-  color: #264653;
-}
-.troisiemeTrait {
-  height: 2px;
-  width: 10%;
-  background-color: #264653;
-  justify-content: center;
-  margin: auto;
-}
-.liste-technologies {
-  margin: 80px 0 80px 0;
-  list-style: none;
-  justify-content: center;
-  display: flex;
-}
-
-.technologies img {
-  width: 150px;
-  height: 150px;
-}
-
-.technologies #js {
-  width: 290px;
-  height: 150px;
-}
-
-.technologies #php {
-  width: 290px;
-  height: 150px;
-}
-
 /* ** FOOTER ** */
 
 .footer {
@@ -463,110 +501,208 @@ img {
 /* ** RESPONSIVE ** */
 
 @media screen and (max-width: 460px) {
-  #icons {
-    display: block;
-  }
-  .avatar-lucile {
-    display: block;
+  /* ** HEADER ** */
+  .en-tete {
+    width: 100%;
   }
 
-  .presentation h1 {
-    text-align: center;
-    display: flex;
+  .avatar-lucile {
+    margin-top: 5%;
+    margin-left: 25%;
+    width: 50%;
+    height: auto;
+  }
+
+  #icons {
+    margin-top: 5%;
+    width: 15%;
+    height: auto;
+    display: grid;
+  }
+
+  /* ** PRESENTATION ** */
+
+  .partiePresentation {
+    width: 100%;
+    display: inline-block;
+    flex-direction: column;
+    background-color: #264653;
+    border-radius: 0px 0px 100px 100px;
+    margin: none;
   }
 
   .premierTrait {
-    text-align: center;
-    display: flex;
-    width: 190px;
-  }
-
-  .presentation p {
-    display: flex;
-  }
-
-  .partiePresentation {
-    flex-direction: column;
-
-    height: 500px;
+    width: 50%;
   }
 
   .presentation {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 280px;
-  }
-  .premierTrait {
-    justify-content: center;
+    width: 90%;
+    margin-left: 5%;
   }
 
-  .mockup {
-    margin-top: 60px;
-    width: 360px;
-    justify-content: center;
-    text-align: center;
+  .presentation h1 {
+    color: #f4a261;
   }
 
-  .mockup img {
-    justify-content: center;
-    display: block;
-    width: 300px;
-    height: 300px;
-  }
-  .cv button {
-    display: block;
+  .presentation p {
+    color: #e9e5e3;
   }
 
+  img {
+    height: 250px;
+    width: 250px;
+    margin-left: 50%;
+  }
+
+  /** FORMATIONS **/
   .partieFormations {
-    display: block;
-    justify-content: center;
-    height: 500px;
+    width: 160%;
+    margin-top: 20%;
+    display: inline-block;
   }
 
   .formations {
+    width: 50%;
+    margin-top: 5%;
+    color: #264653;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .secondTrait {
+    margin-top: 5%;
+    width: 50%;
+    margin-right: 10%;
+  }
+
+  .formations h2 {
+    width: 130%;
+  }
+
+  .formations p {
+    text-align: center;
+    justify-content: center;
+    margin-right: 3%;
+    margin-left: 10%;
+  }
+
+  .liste {
+    width: 60%;
+    margin: none;
+    justify-content: center;
+  }
+
+  /* ** POP-UP ** */
+
+  .pop-up {
+    visibility: hidden;
+  }
+
+  /* ** EXPERIENCES PROFESSIONNELLES ** */
+
+  .partieExperiences {
+    background-color: #264653;
+    border-radius: 100px;
     display: block;
     justify-content: center;
-    height: 500px;
+    text-align: center;
+    margin-top: 10%;
+    padding-bottom: 2%;
   }
+
+  .experiences {
+    padding-top: none;
+    width: 100%;
+  }
+
+  #experience {
+    padding-top: 20px;
+    width: 90%;
+  }
+
+  #detail {
+    margin-top: 5%;
+    width: 90%;
+  }
+
+  .listeExperiences {
+    padding: 5%;
+  }
+
+  #detail1,
+  #detail2,
+  #detail3,
+  #detail4 {
+    color: #e9e5e3;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+    text-align: center;
+    margin-left: 7%;
+    margin-right: 5%;
+    width: 75%;
+    margin-bottom: 5%;
+  }
+
+  /* ** TECHNOLOGIES ** */
+
+  .technologies {
+    margin-top: 10%;
+  }
+
+  .technologies h2 {
+    text-align: center;
+    color: #264653;
+  }
+  .troisiemeTrait {
+    width: 50%;
+  }
+
+  .liste-technologies li {
+    margin: none;
+  }
+
+  .liste-technologies {
+    margin-top: 10%;
+    list-style: none;
+    display: flex;
+    padding-left: 0%;
+  }
+
+  .technologies img {
+    width: 50%;
+    height: auto;
+    margin-left: 10%;
+  }
+
+  /* * HOBBIES * */
 
   #dessinHobbies {
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    height: auto;
+    margin-left: 0%;
   }
 
+  /* * CONTACT * */
   .contact {
+    visibility: hidden;
+  }
+
+  /* ** FOOTER ** */
+
+  .footer {
+    margin-top: 20%;
+    background-color: #264653;
+    height: 50px;
+    border-radius: 200px 200px 0px 0px;
+    margin: none;
+  }
+
+  .copyright {
+    color: #e9e5e3;
     justify-content: center;
-    display: flex;
-    width: 300px;
-    height: 200px;
-  }
-
-  .form-contact h3 {
-    color: #264653;
-    margin-top: 20px;
-    padding-top: 20px;
-    font-size: 15px;
-  }
-
-  .form-button #nom {
-    width: 35%;
-    height: 5px;
-  }
-
-  .form-button #prenom {
-    width: 25%;
-    height: 5px;
-  }
-
-  .form-button #email {
-    width: 70%;
-    height: 5px;
-  }
-
-  .form-button #message {
-    width: 70%;
-    height: 30px;
+    text-align: center;
   }
 }
 
